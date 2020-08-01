@@ -59,8 +59,8 @@ body {
     height: 100%;
     position: absolute;
     background: #e2e2e2;
-    opacity: 0.8;
     display: flex;
+    opacity: 0.8;
     align-items: center;
     justify-content: center;
 }
@@ -273,21 +273,22 @@ body {
 }
 
 .exchange-item__btn:hover+.tooltip {
-    visibility: visible;
+    display: block;
 }
 
 .tooltip {
     width: 248px;
-    height: 109px;
     background-color: #000000;
     opacity: 0.79;
-    padding: 14px 0px 19px;
+    padding: 14px 10px 19px;
     border-radius: 5px;
     position: absolute;
-    bottom: 55px;
-    left: -60px;
-    visibility: hidden;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
     z-index: 5;
+    vertical-align: bottom;
 }
 
 .tooltip:after {
@@ -300,7 +301,7 @@ body {
     border-top: 15px solid rgba(0, 0, 0, 0.79);
     left: 50%;
     transform: translateX(-50%);
-    top: 109px;
+    bottom: -15px;
 }
 
 .tooltip__title {
